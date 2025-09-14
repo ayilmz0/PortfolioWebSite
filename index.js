@@ -5,4 +5,11 @@ document.addEventListener("mousemove", (e) => {
   cursorLight.style.top = `${e.clientY}px`;
 });
 
+const form = document.querySelector(".glitch-card");
 
+form.addEventListener("submit", function(e) {
+
+  setTimeout(() => {
+    form.reset(); 
+  }, 500);
+});
