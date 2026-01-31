@@ -594,8 +594,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  body {
-    height: auto;
+  body, html {
+    max-width: 100% !important;
+    overflow-x: hidden !important; 
+    position: relative;
   }
 
   #info-card {
