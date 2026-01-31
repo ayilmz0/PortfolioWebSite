@@ -594,7 +594,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  body, html {
+  body,html {
     max-width: 100% !important;
     overflow-x: hidden !important; 
     position: relative;
