@@ -4,6 +4,7 @@
   font-family: "Oxanium", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box; 
+  scroll-margin-top: 120px;
 }
 
 body {
@@ -116,22 +117,33 @@ a {
   margin: 0;
 }
 
-#experience {
+#experience , #education {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.year {
+.year, .education{
   color: #94a3b8;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
-.details h3 {
+.details h3{
   font-weight: 700;
   font-size: 1.2rem;
   margin-top: 0;
+}
+
+.education h3{
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: white;
+}
+
+.education p{
+  color: #94a3b8
 }
 
 .list-group {
