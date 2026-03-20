@@ -17,5 +17,5 @@ Sitem aşağıdaki temel web teknolojileri kullanılarak geliştirilmiştir:
 - Eğitim ve deneyim detayları  
 - Projelerimin görsel ve açıklamalı listelenmesi  
 - İletişim bölümünden doğrudan mesaj gönderme  
-- Duyarlı tasarım ile mobil ve masaüstünde uyumlu görünüm :contentReference[oaicite:3]{index=3}
+- Duyarlı tasarım ile mobil ve masaüstünde uyumlu görünüm
 
