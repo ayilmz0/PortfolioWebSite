@@ -178,7 +178,7 @@ a {
   transition: box-shadow 0.3s ease;
 }
 
-#projects:hover, #projects1:hover, #projects2:hover {
+#projects:hover, #projects1:hover, #projects2:hover, #projects3:hover {
   box-shadow: 0px 0px 20px 1px rgba(143, 156, 215, 0.3);
 }
 
@@ -188,19 +188,19 @@ a {
   margin-top: 0;
 }
 
-.meeting-sc, .student-automation, .car-compare {
+.meeting-sc, .student-automation, .car-compare, .library-management {
   flex-shrink: 0; 
   width: 200px;
 }
 
-.meeting-sc img, .student-automation img, .car-compare img {
+.meeting-sc img, .student-automation img, .car-compare img, .library-management img {
   width: 100%;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
-.meeting-sc img:hover, .student-automation img:hover, .car-compare img:hover {
+.meeting-sc img:hover, .student-automation img:hover, .car-compare img:hover, .library-management img:hover {
   box-shadow: 6px 6px 8px #707070, -6px -6px 8px #ffffff;
 }
 
