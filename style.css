@@ -346,7 +346,7 @@ a {
     align-items: center;
   }
 
-  .meeting-sc, .student-automation, .car-compare {
+  .meeting-sc, .student-automation, .car-compare, .library-management {
     width: 100%;
     max-width: 400px;
   }
