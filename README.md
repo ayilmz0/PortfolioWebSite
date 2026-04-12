@@ -4,7 +4,7 @@
 Bu repository, benim kişisel portföy web sitemin kaynak kodlarını ve tanıtımını içerir.
 Site, modern web teknolojileriyle geliştirilmiş olup CV niteliğinde online bir kartvizit görevi görür.
 
-Canlı demo: https://abdullahyilmaz.vercel.app
+Canlı: https://abdullahyilmaz.vercel.app
 
 ## 🛠️ Kullanılan Teknolojiler
 Sitem aşağıdaki temel web teknolojileri kullanılarak geliştirilmiştir:
