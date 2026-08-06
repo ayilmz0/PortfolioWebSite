@@ -30,6 +30,7 @@ a {
   z-index: 1; 
 }
 
+/* LEFT PANEL */
 .left-panel {
   position: sticky;
   top: 0;
@@ -39,14 +40,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
-}
-
-.right-panel {
-  width: 55%;
-  padding: 80px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 80px; 
 }
 
 #info-card {
@@ -79,22 +72,27 @@ a {
   font-weight: 700;
   letter-spacing: .1em;
   text-transform: uppercase;
+  gap: 5px;
+  padding: 30px 0 0 0;
 }
 
 .about-experience-project a {
   color: #94a3b8;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
 
 .about-experience-project a:hover {
-  color:rgb(94 234 212);
+  color: rgb(94 234 212);
+  transform: translateX(5px);
 }
 
 .social-media {
   display: flex;
   list-style: none;
-  padding: 0;
+  padding: 90px 0 0 0;
   margin: 0;
   gap: 25px;
 }
@@ -110,6 +108,15 @@ a {
   color: white;
 }
 
+/* RIGHT PANEL */
+.right-panel {
+  width: 55%;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px; 
+}
+
 .content p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -117,33 +124,74 @@ a {
   margin: 0;
 }
 
-#experience , #education {
+/* EĞİTİM (EDUCATION) BÖLÜMÜ GÜZELLEŞTİRMESİ */
+#education {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid rgb(94 234 212);
+  border-radius: 1rem;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+  transition: all 0.3s ease;
 }
 
-.year, .education{
-  color: #94a3b8;
-  font-weight: 700;
-  font-size: 1.2rem;
+#education:hover {
+  box-shadow: 0px 0px 20px 1px rgba(94, 234, 212, 0.2);
+  transform: translateY(-2px);
 }
 
-.details h3{
+.education .year {
+  color: rgb(94 234 212);
   font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
 }
 
-.education h3{
+.education h3 {
   font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 0;
+  font-size: 1.3rem;
+  margin: 0;
   color: white;
+  line-height: 1.3;
 }
 
-.education p{
-  color: #94a3b8
+/* DENEYİM (EXPERIENCE) NOKTA NOKTA BAĞLANTI (TIMELINE) */
+.content#experience {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px dotted rgba(94, 234, 212, 0.4);
+  margin-left: 10px;
+}
+
+/* Deneyim Kartının Başındaki Neon Nokta */
+.content#experience::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  background-color: #11172a;
+  border: 2px solid rgb(94 234 212);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(94 234 212);
+}
+
+.year {
+  color: rgb(94 234 212);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.details h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: white;
 }
 
 .list-group {
@@ -164,28 +212,38 @@ a {
   border-radius: 500px;
   padding: 8px 15px;
   background-color: #2dd4bf1a;
+  transition: all 0.2s ease;
 }
 
+.custom-list .list-group-item:hover {
+  background-color: #2dd4bf33;
+  transform: translateY(-2px);
+}
+
+/* PROJELER (PROJECTS) */
 #projects, #projects1, #projects2, #projects3 {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.074);
+  background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1rem;
   padding: 20px;
   width: 100%;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #projects:hover, #projects1:hover, #projects2:hover, #projects3:hover {
   box-shadow: 0px 0px 20px 1px rgba(143, 156, 215, 0.3);
+  transform: translateY(-3px);
 }
 
-#projects h3, #projects1 h3, #projects2 h3 {
+#projects h3, #projects1 h3, #projects2 h3, #projects3 h3 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 0;
+  color: white;
 }
 
 .meeting-sc, .student-automation, .car-compare, .library-management {
@@ -196,12 +254,12 @@ a {
 .meeting-sc img, .student-automation img, .car-compare img, .library-management img {
   width: 100%;
   display: block;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.3s ease;
 }
 
 .meeting-sc img:hover, .student-automation img:hover, .car-compare img:hover, .library-management img:hover {
-  box-shadow: 6px 6px 8px #707070, -6px -6px 8px #ffffff;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4);
 }
 
 #more-projects {
@@ -234,20 +292,23 @@ a {
   transform: translateY(-4px) translateX(4px); 
 }
 
+/* İLETİŞİM FORMU (GLITCH) */
 .glitch-form-wrapper {
   --bg-color: rgba(28, 51, 167, 0.25);
   --primary-color: #00f2ea;
   --text-color: #e5e5e5;
-  --font-family: "Fira Code", Consolas, "Courier New", Courier, monospace;
+  --font-family: "Oxanium", sans-serif;
   --glitch-anim-duration: 0.5s;
   
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--font-family);
-  background-color: rgb(15, 9, 37);
-  padding: 50px;
-  border-radius: 50px;
+  background-color: rgba(15, 9, 37, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 242, 234, 0.2);
   width: 100%;
 }
 
@@ -270,34 +331,13 @@ a {
 .form-group input { width: 100%; background: transparent; border: none; border-bottom: 2px solid rgba(0, 242, 234, 0.3); padding: 0.75em 0; font-size: 1rem; color: var(--text-color); font-family: inherit; outline: none; transition: border-color 0.3s ease; }
 .form-group input:focus { border-color: var(--primary-color); }
 .form-group input:focus+.form-label, .form-group input:not(:placeholder-shown)+.form-label { top: -1.2em; font-size: 0.8rem; opacity: 1; }
-.form-group input:focus+.form-label::before, .form-group input:focus+.form-label::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--bg-color); }
-.form-group input:focus+.form-label::before { color: var(--secondary-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-.form-group input:focus+.form-label::after { color: var(--primary-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both; }
-
-@keyframes glitch-anim {
-  0% { transform: translate(0); clip-path: inset(0 0 0 0); }
-  20% { transform: translate(-5px, 3px); clip-path: inset(50% 0 20% 0); }
-  40% { transform: translate(3px, -2px); clip-path: inset(20% 0 60% 0); }
-  60% { transform: translate(-4px, 2px); clip-path: inset(80% 0 5% 0); }
-  80% { transform: translate(4px, -3px); clip-path: inset(30% 0 45% 0); }
-  100% { transform: translate(0); clip-path: inset(0 0 0 0); }
-}
 
 .submit-btn { width: 100%; padding: 0.8em; margin-top: 1rem; background-color: transparent; border: 2px solid var(--primary-color); color: var(--primary-color); font-family: inherit; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.2em; cursor: pointer; position: relative; transition: all 0.3s; overflow: hidden; }
-.submit-btn:hover, .submit-btn:focus { background-color: var(--primary-color); color: var(--bg-color); box-shadow: 0 0 25px var(--primary-color); outline: none; }
-.submit-btn:active { transform: scale(0.97); }
-.submit-btn .btn-text { position: relative; z-index: 1; transition: opacity 0.2s ease; }
-.submit-btn:hover .btn-text { opacity: 0; }
-.submit-btn::before, .submit-btn::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; opacity: 0; background-color: var(--primary-color); transition: opacity 0.2s ease; }
-.submit-btn:hover::before, .submit-btn:focus::before { opacity: 1; color: var(--secondary-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-.submit-btn:hover::after, .submit-btn:focus::after { opacity: 1; color: var(--bg-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both; }
+.submit-btn:hover, .submit-btn:focus { background-color: var(--primary-color); color: #11172a; box-shadow: 0 0 25px var(--primary-color); outline: none; }
 
 .form-group textarea { width: 100%; min-height: 120px; background: transparent; border: none; border-bottom: 2px solid rgba(0, 242, 234, 0.3); padding: 0.75em 0; font-size: 1rem; color: var(--text-color); font-family: inherit; outline: none; transition: border-color 0.3s ease; resize: vertical; }
 .form-group textarea:focus { border-color: var(--primary-color); }
 .form-group textarea:focus+.form-label, .form-group textarea:not(:placeholder-shown)+.form-label { top: -1.2em; font-size: 0.8rem; opacity: 1; }
-.form-group textarea:focus+.form-label::before, .form-group textarea:focus+.form-label::after { content: attr(data-text); position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--bg-color); }
-.form-group textarea:focus+.form-label::before { color: var(--secondary-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-.form-group textarea:focus+.form-label::after { color: var(--primary-color); animation: glitch-anim var(--glitch-anim-duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both; }
 
 #footer {
   color: #94a3b8;
@@ -341,6 +381,10 @@ a {
     gap: 60px;
   }
 
+  .content#experience {
+    padding-left: 20px;
+  }
+
   #projects, #projects1, #projects2, #projects3 {
     flex-direction: column;
     align-items: center;
@@ -352,6 +396,6 @@ a {
   }
 
   .glitch-form-wrapper {
-    padding: 30px 15px; 
+    padding: 20px; 
   }
 }
