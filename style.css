@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   line-height: 1.6;
+  zoom: 0.90;
 }
 
 a {
