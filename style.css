@@ -312,7 +312,7 @@ a {
   transform: translateY(-2px);
 }
 
-#projects, #projects1, #projects2, #projects3 {
+#projects, #projects1, #projects2, #projects3, #projects4 {
   display: flex;
   gap: 24px;
   align-items: flex-start;
@@ -325,14 +325,14 @@ a {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-#projects:hover, #projects1:hover, #projects2:hover, #projects3:hover {
+#projects:hover, #projects1:hover, #projects2:hover, #projects3:hover, #projects4:hover {
   background: var(--bg-glass-hover);
   border-color: var(--border-cyan-glow);
   transform: translateY(-5px);
   box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 242, 254, 0.15);
 }
 
-#projects h3, #projects1 h3, #projects2 h3, #projects3 h3 {
+#projects h3, #projects1 h3, #projects2 h3, #projects3 h3, #projects4 h3 {
   font-size: 1.25rem;
   font-weight: 700;
   margin-top: 0;
@@ -340,12 +340,12 @@ a {
   color: var(--text-primary);
 }
 
-.meeting-sc, .student-automation, .car-compare, .library-management {
+.meeting-sc, .student-automation, .car-compare, .library-management, .textile-scout {
   flex-shrink: 0; 
   width: 200px;
 }
 
-.meeting-sc img, .student-automation img, .car-compare img, .library-management img {
+.meeting-sc img, .student-automation img, .car-compare img, .library-management img, .textile-scout img {
   width: 100%;
   display: block;
   border-radius: 10px;
@@ -353,7 +353,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.meeting-sc img:hover, .student-automation img:hover, .car-compare img:hover, .library-management img:hover {
+.meeting-sc img:hover, .student-automation img:hover, .car-compare img:hover, .library-management img:hover, .textile-scout img:hover {
   border-color: var(--accent-cyan);
   box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
 }
