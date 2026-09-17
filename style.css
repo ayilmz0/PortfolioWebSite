@@ -491,11 +491,11 @@ a {
     left: -35px; 
   }
 
-  #projects, #projects1, #projects2, #projects3 {
+  #projects, #projects1, #projects2, #projects3, #projects4 {
     flex-direction: column;
   }
 
-  .meeting-sc, .student-automation, .car-compare, .library-management {
+  .meeting-sc, .student-automation, .car-compare, .library-management, .textile-scout {
     width: 100%;
   }
 }
